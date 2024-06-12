@@ -1,0 +1,18 @@
+.articleList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; // Ensure cards take the full width with equal spacing
+  padding: 20px 0; // Add padding to ensure spacing on smaller screens
+  width: 100%;
+  box-sizing: border-box; // Ensure padding is included in the width
+
+  @media (max-width: 768px) {
+    gap: 10px; // Adjust gap for smaller screens
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column; // Stack cards vertically on very small screens
+    gap: 10px;
+  }
+}
